@@ -1,0 +1,14 @@
+{
+  "headers": {
+    "content-length": "127",
+    "host": "demo-app:8080",
+    "content-type": "application/json",
+    "accept-encoding": "gzip",
+    "user-agent": "Go-http-client/1.1"
+  },
+  "body": {
+    "block": false,
+    "ids": [ "8a330a6f-3702-41a3-b215-89ff44d0335f" ],
+    "start": "2021-09-25 14:38:16.9582472 +0000 UTC m=+244.122228301"
+  }
+}

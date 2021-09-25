@@ -1,0 +1,51 @@
+[zookeeper]
+servers = ["zoo1:2181"]
+timeout = 6
+root-path = "/burrow"
+
+[client-profile.myclient]
+client-id = "burrow-app-2"
+kafka-version = "2.1.0"
+
+[cluster.local]
+class-name = "kafka"
+servers = ["kafka1:19092", "kafka1:19093", "kafka1:19094"]
+client-profile = "myclient"
+topic-refresh = 5
+offset-refresh = 35
+groups-reaper-refresh = 0
+
+[consumer.local]
+class-name = "kafka"
+cluster = "local"
+servers = ["kafka1:19092", "kafka1:19093", "kafka1:19094"]
+client-profile = "myclient"
+group-denylist = "^(console-consumer-|python-kafka-consumer-).*$"
+group-allowlist = ""
+
+[httpserver.default]
+address = ":8000"
+
+[storage.default]
+class-name = "inmemory"
+workers = 20
+intervals = 5
+expire-group = 604800
+min-distance = 1
+
+# See https://github.com/linkedin/Burrow/wiki/Configuration#notifiers
+[notifier.default]
+class-name="http"
+interval=5
+threshold=2
+extras={ api_key="REDACTED", app="burrow", tier="STG", fabric="mydc" }
+headers={ burrowId="burrow-2", customKey1="customValue1", customKey2="customValue2" }
+url-open="http://demo-app:8080/api/event"
+#template-open="/etc/burrow/http-post.tmpl"
+template-open="/etc/burrow/http-post2.tmpl"
+send-close=true
+url-close="http://demo-app:8080/api/event"
+template-close="/etc/burrow/http-delete.tmpl"
+method-close="DELETE"
+timeout=5
+keepalive=30

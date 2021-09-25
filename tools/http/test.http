@@ -1,5 +1,5 @@
 ### Start producer-1
-POST {{endpoint}}/api/worker/producer/producer-1/topic1?interval=100
+POST {{endpoint}}/api/worker/producer/producer-1/topic1?interval=500
 Content-Type: application/json
 
 ### Start consumer-1
@@ -27,7 +27,7 @@ GET {{endpoint}}/api/worker/consumer/leader
 Content-Type: application/json
 
 ### Update consumer-1 with slow consume
-PUT {{endpoint}}/api/worker/consumer/consumer-1/topic1?groupId=consumers-1&interval=5000
+PUT {{endpoint}}/api/worker/consumer/consumer-1/topic1?groupId=consumers-1&interval=10000
 Content-Type: application/json
 
 ### Update consumer-2 with not commit

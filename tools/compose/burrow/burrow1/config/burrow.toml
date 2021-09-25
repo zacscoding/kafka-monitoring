@@ -3,14 +3,14 @@ servers = ["zoo1:2181"]
 timeout = 6
 root-path = "/burrow"
 
-[client-profile.test]
-client-id = "burrow-test"
+[client-profile.myclient]
+client-id = "burrow-app-1"
 kafka-version = "2.1.0"
 
 [cluster.local]
 class-name = "kafka"
 servers = ["kafka1:19092", "kafka1:19093", "kafka1:19094"]
-client-profile = "test"
+client-profile = "myclient"
 topic-refresh = 5
 offset-refresh = 35
 groups-reaper-refresh = 0
@@ -19,7 +19,7 @@ groups-reaper-refresh = 0
 class-name = "kafka"
 cluster = "local"
 servers = ["kafka1:19092", "kafka1:19093", "kafka1:19094"]
-client-profile = "test"
+client-profile = "myclient"
 group-denylist = "^(console-consumer-|python-kafka-consumer-).*$"
 group-allowlist = ""
 
@@ -33,17 +33,19 @@ intervals = 5
 expire-group = 604800
 min-distance = 1
 
+# See https://github.com/linkedin/Burrow/wiki/Configuration#notifiers
 [notifier.default]
 class-name="http"
-url-open="http://demo-app:8080/api/event"
-url-close="http://demo-app:8080/api/event"
-# report interval
 interval=5
-timeout=5
-keepalive=30
+threshold=2
 extras={ api_key="REDACTED", app="burrow", tier="STG", fabric="mydc" }
-template-open="/etc/burrow/http-post.tmpl"
+headers={ burrowId="burrow-1", customKey1="customValue1", customKey2="customValue2" }
+url-open="http://demo-app:8080/api/event"
+#template-open="/etc/burrow/http-post.tmpl"
+template-open="/etc/burrow/http-post2.tmpl"
+send-close=true
+url-close="http://demo-app:8080/api/event"
 template-close="/etc/burrow/http-delete.tmpl"
 method-close="DELETE"
-send-close=true
-threshold=2
+timeout=5
+keepalive=30

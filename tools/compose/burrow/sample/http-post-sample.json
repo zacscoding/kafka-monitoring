@@ -1,0 +1,46 @@
+{
+  "headers": {
+    "content-length": "496",
+    "host": "demo-app:8080",
+    "content-type": "application/json",
+    "accept-encoding": "gzip",
+    "user-agent": "Go-http-client/1.1"
+  },
+  "body": {
+    "block": false,
+    "events": [
+      {
+        "id": "8a330a6f-3702-41a3-b215-89ff44d0335f",
+        "event": {
+          "severity": "ERR",
+          "group": "consumers-1",
+          "start": "Sep 25, 2021 14:38:16 UTC",
+          "complete": 1,
+          "partitions": [
+            {
+              "topic": "topic1",
+              "partition": 0,
+              "owner": "/172.24.0.7",
+              "client_id": "consumer-consumers-1-1",
+              "status": "STALL",
+              "start": {
+                "offset": 503,
+                "timestamp": 1632580705703,
+                "observedAt": 1632580705000,
+                "lag": 119
+              },
+              "end": {
+                "offset": 503,
+                "timestamp": 1632580725719,
+                "observedAt": 1632580725000,
+                "lag": 119
+              },
+              "current_lag": 119,
+              "complete": 1
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

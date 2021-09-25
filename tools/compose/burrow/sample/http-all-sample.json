@@ -1,0 +1,441 @@
+{
+  "openEvents": [
+    {
+      "headers": {
+        "customkey1": "customValue1",
+        "content-length": "539",
+        "customkey2": "customValue2",
+        "host": "demo-app:8080",
+        "burrowid": "burrow-2",
+        "content-type": "application/json",
+        "accept-encoding": "gzip",
+        "user-agent": "Go-http-client/1.1"
+      },
+      "body": {
+        "api_key": "REDACTED",
+        "app": "burrow",
+        "block": false,
+        "events": [
+          {
+            "id": "441a11f8-ad9e-4cb8-9154-880593d420e2",
+            "event": {
+              "severity": "ERR",
+              "tier": "STG",
+              "group": "consumers-1",
+              "start": "Sep 25, 2021 15:37:15 UTC",
+              "complete": 1,
+              "partitions": [
+                {
+                  "topic": "topic1",
+                  "partition": 0,
+                  "owner": "/172.26.0.7",
+                  "client_id": "consumer-consumers-1-1",
+                  "status": "STALL",
+                  "start": {
+                    "offset": 59,
+                    "timestamp": 1632584193828,
+                    "observedAt": 1632584193000,
+                    "lag": 19
+                  },
+                  "end": {
+                    "offset": 59,
+                    "timestamp": 1632584227816,
+                    "observedAt": 1632584227000,
+                    "lag": 42
+                  },
+                  "current_lag": 42,
+                  "complete": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "headers": {
+        "customkey1": "customValue1",
+        "content-length": "539",
+        "customkey2": "customValue2",
+        "host": "demo-app:8080",
+        "burrowid": "burrow-2",
+        "content-type": "application/json",
+        "accept-encoding": "gzip",
+        "user-agent": "Go-http-client/1.1"
+      },
+      "body": {
+        "api_key": "REDACTED",
+        "app": "burrow",
+        "block": false,
+        "events": [
+          {
+            "id": "441a11f8-ad9e-4cb8-9154-880593d420e2",
+            "event": {
+              "severity": "ERR",
+              "tier": "STG",
+              "group": "consumers-1",
+              "start": "Sep 25, 2021 15:37:15 UTC",
+              "complete": 1,
+              "partitions": [
+                {
+                  "topic": "topic1",
+                  "partition": 0,
+                  "owner": "/172.26.0.7",
+                  "client_id": "consumer-consumers-1-1",
+                  "status": "STALL",
+                  "start": {
+                    "offset": 59,
+                    "timestamp": 1632584193828,
+                    "observedAt": 1632584193000,
+                    "lag": 19
+                  },
+                  "end": {
+                    "offset": 59,
+                    "timestamp": 1632584227816,
+                    "observedAt": 1632584227000,
+                    "lag": 42
+                  },
+                  "current_lag": 42,
+                  "complete": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "headers": {
+        "customkey1": "customValue1",
+        "content-length": "539",
+        "customkey2": "customValue2",
+        "host": "demo-app:8080",
+        "burrowid": "burrow-2",
+        "content-type": "application/json",
+        "accept-encoding": "gzip",
+        "user-agent": "Go-http-client/1.1"
+      },
+      "body": {
+        "api_key": "REDACTED",
+        "app": "burrow",
+        "block": false,
+        "events": [
+          {
+            "id": "441a11f8-ad9e-4cb8-9154-880593d420e2",
+            "event": {
+              "severity": "ERR",
+              "tier": "STG",
+              "group": "consumers-1",
+              "start": "Sep 25, 2021 15:37:15 UTC",
+              "complete": 1,
+              "partitions": [
+                {
+                  "topic": "topic1",
+                  "partition": 0,
+                  "owner": "/172.26.0.7",
+                  "client_id": "consumer-consumers-1-1",
+                  "status": "STALL",
+                  "start": {
+                    "offset": 59,
+                    "timestamp": 1632584201833,
+                    "observedAt": 1632584201000,
+                    "lag": 19
+                  },
+                  "end": {
+                    "offset": 59,
+                    "timestamp": 1632584237791,
+                    "observedAt": 1632584237000,
+                    "lag": 42
+                  },
+                  "current_lag": 42,
+                  "complete": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "headers": {
+        "customkey1": "customValue1",
+        "content-length": "539",
+        "customkey2": "customValue2",
+        "host": "demo-app:8080",
+        "burrowid": "burrow-2",
+        "content-type": "application/json",
+        "accept-encoding": "gzip",
+        "user-agent": "Go-http-client/1.1"
+      },
+      "body": {
+        "api_key": "REDACTED",
+        "app": "burrow",
+        "block": false,
+        "events": [
+          {
+            "id": "441a11f8-ad9e-4cb8-9154-880593d420e2",
+            "event": {
+              "severity": "ERR",
+              "tier": "STG",
+              "group": "consumers-1",
+              "start": "Sep 25, 2021 15:37:15 UTC",
+              "complete": 1,
+              "partitions": [
+                {
+                  "topic": "topic1",
+                  "partition": 0,
+                  "owner": "/172.26.0.7",
+                  "client_id": "consumer-consumers-1-1",
+                  "status": "STALL",
+                  "start": {
+                    "offset": 59,
+                    "timestamp": 1632584201833,
+                    "observedAt": 1632584201000,
+                    "lag": 19
+                  },
+                  "end": {
+                    "offset": 59,
+                    "timestamp": 1632584237791,
+                    "observedAt": 1632584237000,
+                    "lag": 42
+                  },
+                  "current_lag": 42,
+                  "complete": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "headers": {
+        "customkey1": "customValue1",
+        "content-length": "539",
+        "customkey2": "customValue2",
+        "host": "demo-app:8080",
+        "burrowid": "burrow-2",
+        "content-type": "application/json",
+        "accept-encoding": "gzip",
+        "user-agent": "Go-http-client/1.1"
+      },
+      "body": {
+        "api_key": "REDACTED",
+        "app": "burrow",
+        "block": false,
+        "events": [
+          {
+            "id": "441a11f8-ad9e-4cb8-9154-880593d420e2",
+            "event": {
+              "severity": "ERR",
+              "tier": "STG",
+              "group": "consumers-1",
+              "start": "Sep 25, 2021 15:37:15 UTC",
+              "complete": 1,
+              "partitions": [
+                {
+                  "topic": "topic1",
+                  "partition": 0,
+                  "owner": "/172.26.0.7",
+                  "client_id": "consumer-consumers-1-1",
+                  "status": "STALL",
+                  "start": {
+                    "offset": 59,
+                    "timestamp": 1632584209805,
+                    "observedAt": 1632584209000,
+                    "lag": 19
+                  },
+                  "end": {
+                    "offset": 59,
+                    "timestamp": 1632584247796,
+                    "observedAt": 1632584247000,
+                    "lag": 42
+                  },
+                  "current_lag": 42,
+                  "complete": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "headers": {
+        "customkey1": "customValue1",
+        "content-length": "539",
+        "customkey2": "customValue2",
+        "host": "demo-app:8080",
+        "burrowid": "burrow-2",
+        "content-type": "application/json",
+        "accept-encoding": "gzip",
+        "user-agent": "Go-http-client/1.1"
+      },
+      "body": {
+        "api_key": "REDACTED",
+        "app": "burrow",
+        "block": false,
+        "events": [
+          {
+            "id": "441a11f8-ad9e-4cb8-9154-880593d420e2",
+            "event": {
+              "severity": "ERR",
+              "tier": "STG",
+              "group": "consumers-1",
+              "start": "Sep 25, 2021 15:37:15 UTC",
+              "complete": 1,
+              "partitions": [
+                {
+                  "topic": "topic1",
+                  "partition": 0,
+                  "owner": "/172.26.0.7",
+                  "client_id": "consumer-consumers-1-1",
+                  "status": "STALL",
+                  "start": {
+                    "offset": 59,
+                    "timestamp": 1632584209805,
+                    "observedAt": 1632584209000,
+                    "lag": 19
+                  },
+                  "end": {
+                    "offset": 59,
+                    "timestamp": 1632584247796,
+                    "observedAt": 1632584247000,
+                    "lag": 42
+                  },
+                  "current_lag": 42,
+                  "complete": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "headers": {
+        "customkey1": "customValue1",
+        "content-length": "539",
+        "customkey2": "customValue2",
+        "host": "demo-app:8080",
+        "burrowid": "burrow-2",
+        "content-type": "application/json",
+        "accept-encoding": "gzip",
+        "user-agent": "Go-http-client/1.1"
+      },
+      "body": {
+        "api_key": "REDACTED",
+        "app": "burrow",
+        "block": false,
+        "events": [
+          {
+            "id": "441a11f8-ad9e-4cb8-9154-880593d420e2",
+            "event": {
+              "severity": "ERR",
+              "tier": "STG",
+              "group": "consumers-1",
+              "start": "Sep 25, 2021 15:37:15 UTC",
+              "complete": 1,
+              "partitions": [
+                {
+                  "topic": "topic1",
+                  "partition": 0,
+                  "owner": "/172.26.0.7",
+                  "client_id": "consumer-consumers-1-1",
+                  "status": "STALL",
+                  "start": {
+                    "offset": 59,
+                    "timestamp": 1632584217811,
+                    "observedAt": 1632584217000,
+                    "lag": 19
+                  },
+                  "end": {
+                    "offset": 59,
+                    "timestamp": 1632584257800,
+                    "observedAt": 1632584257000,
+                    "lag": 42
+                  },
+                  "current_lag": 66,
+                  "complete": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "headers": {
+        "customkey1": "customValue1",
+        "content-length": "539",
+        "customkey2": "customValue2",
+        "host": "demo-app:8080",
+        "burrowid": "burrow-2",
+        "content-type": "application/json",
+        "accept-encoding": "gzip",
+        "user-agent": "Go-http-client/1.1"
+      },
+      "body": {
+        "api_key": "REDACTED",
+        "app": "burrow",
+        "block": false,
+        "events": [
+          {
+            "id": "441a11f8-ad9e-4cb8-9154-880593d420e2",
+            "event": {
+              "severity": "ERR",
+              "tier": "STG",
+              "group": "consumers-1",
+              "start": "Sep 25, 2021 15:37:15 UTC",
+              "complete": 1,
+              "partitions": [
+                {
+                  "topic": "topic1",
+                  "partition": 0,
+                  "owner": "/172.26.0.7",
+                  "client_id": "consumer-consumers-1-1",
+                  "status": "STALL",
+                  "start": {
+                    "offset": 59,
+                    "timestamp": 1632584217811,
+                    "observedAt": 1632584217000,
+                    "lag": 19
+                  },
+                  "end": {
+                    "offset": 59,
+                    "timestamp": 1632584257800,
+                    "observedAt": 1632584257000,
+                    "lag": 42
+                  },
+                  "current_lag": 66,
+                  "complete": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "closeEvents": [
+    {
+      "headers": {
+        "customkey1": "customValue1",
+        "content-length": "127",
+        "customkey2": "customValue2",
+        "host": "demo-app:8080",
+        "burrowid": "burrow-2",
+        "content-type": "application/json",
+        "accept-encoding": "gzip",
+        "user-agent": "Go-http-client/1.1"
+      },
+      "body": {
+        "block": false,
+        "ids": [
+          "441a11f8-ad9e-4cb8-9154-880593d420e2"
+        ],
+        "start": "2021-09-25 15:37:15.2741301 +0000 UTC m=+222.889243801"
+      }
+    }
+  ]
+}
